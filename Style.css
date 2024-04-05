@@ -1,0 +1,177 @@
+body {
+    margin : 0px;
+    min-height:100vh;
+
+}
+
+#mainContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image:url('./images and video/sunset\ image.jpeg');
+    width:100vw;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#mainParagraph {
+    font-size: 30px;
+    color:white;
+    font-family: 'Indie Flower', cursive;
+    font-weight:bold;
+    text-align:center;
+    margin-top: 7.5%
+}
+
+ #mainList {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    list-style-type: none; 
+    margin: 0;
+    width:100%;
+    padding: 0;
+    text-align: center; 
+ }
+
+#mainList > li> a, #aboutList >li > a { /*multiple selector*/
+     text-decoration: none; 
+    color: white;  
+}
+
+/*general nav bar*/
+a:hover {  
+    text-decoration: underline;
+    font-size: 1.25em;
+}
+
+a:hover img {
+    transform:scale(1.25);
+}
+
+nav { /*universal selector*/
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: staticS; 
+    top: 0;
+    width: 100%; 
+    padding: 20px 0;
+    background-color:rgb(39, 38, 38);
+}
+
+nav > ul {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    list-style-type: none; 
+    margin: 0;
+    width:100%;
+    padding: 0;
+    text-align: center; 
+}
+
+
+/*css for about page*/
+*.mainAbout {
+    background-color:darkslategray;
+}
+
+#bodyAbout {
+    display: grid;
+    grid-template-columns: 35% 65%; 
+    align-items: center;
+    gap:20px;
+    background-color: darkslategrey
+}
+
+#imageAbout> img {
+    width: 100%; 
+    height:100%;
+    border-radius: 50%;
+    border:5px solid darkgrey
+}
+
+#imageAbout {
+    width:100%;
+}
+
+div + p { /*adjacent sibling selector*/
+    width:100%;
+    color:white;
+    font-size:17pt
+}
+
+/*css for experience*/
+#experienceBody {
+    background-color: darkslategray;
+    color:white;
+}
+
+li> ul {
+    font-style:italic;
+}
+ol {
+    background-color:rgb(39, 38, 38);
+}
+
+#experience {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#experience > img {  /*adapt image to the size of the screen*/
+    height:10vh;
+    width:15vw;
+}
+
+.experienceheading {
+    display:flex;
+    justify-content:center;
+    font-weight:bold;
+    font-size:22pt;
+}
+
+#experiencelist {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+/*css for contact*/
+.bodycontact {  /*dark mode for contact page*/
+    background-color:darkslategray;
+    color:white;
+}
+
+.bodycontactlight {  /*light mode for contact page*/
+    background-color:white;
+    color:black;
+}
+
+.bodycontactblue{  /*blue mode for contact page*/
+    background-color:#00FFFF;
+    color:black;
+}
+#contactinformation {  /*align the content to the center and in a column*/
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align: center;
+    font-size:13pt;
+}
+
+#contactform, #theme, #buttonthemes {  /*align content to the center and in a column*/
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-size:15pt;
+}
+
+
+

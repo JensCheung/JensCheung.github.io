@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jenscheung</title>
+        <link rel="icon" href="./icons/favicon.png">
+        <link href="Style.css" rel="stylesheet">
+    </head>
+    <body class="bodycontact" id="bodycontactid">
+        <nav id="mainNav">
+            <ul id="mainList">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="experience.html">EXPERIENCE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="https://www.instagram.com/jens_cfy/"><img width="22px" height= "22px"src="./icons/Instagram_Glyph_White.png" alt="link to instagram page through instagram logo."></a></li>
+                <li><a href="https://twitter.com/CheungJens55726/"><img width="22px" height= "22px"src="./icons/twitter_logo.png" alt="link to twitter page through twitter logo"></a></li>
+            </ul>
+        </nav>   
+        <div id="contactinformation"><p><h1>Contact information:</h1><br>Email: jn284668@dal.ca<br>Phone number: (XXX) XXX-XXXX </p></div>
+        <form id="contactform">
+            <label for = "name">Name</label>
+            <input type = "text" id = "name">
+            <label for = "phoneNumber">Phone number</label>
+            <input type = "tel" id = "phoneNumber">
+            <label for = "emailaddress">Email address(must end with @dal.ca)</label>
+            <input type = "email" id = "emailaddress">
+            <label for = "subject">Subject</label>
+            <input type = "text" id = "subject">
+            <label for = "message">Message</label>
+            <textarea id = "message"></textarea>
+            <button  id="contactbutton">Submit</button>
+            <div id="error"></div>
+        </form>
+        <p id="theme">Change background theme:</p>
+        <div id="buttonthemes">
+            <button onclick = changeDarkLightTheme() id="backgroundtheme">Light/Dark mode</button>
+            <button onclick = changeBlueTheme() id="texttheme">Blue theme</button>
+        </div>
+    </body>
+    <script src="./javasheet.js"></script>
+</html>
