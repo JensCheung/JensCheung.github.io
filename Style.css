@@ -139,7 +139,16 @@ ol {
     flex-direction:column;
     justify-content:center;
     align-items:center;
+}
 
+@media only screen and (max-width:600px) {
+    #experience {
+        flex-direction:column;
+    }
+    #experience > img {
+        height:50vh;
+        width:75vw;
+    }
 }
 
 
